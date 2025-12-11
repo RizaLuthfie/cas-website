@@ -3,13 +3,13 @@
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center py-4">
         <!-- Logo & Brand -->
-        <div class="flex items-center space-x-3">
+        <router-link to="/" class="flex items-center space-x-3">
           <div class="text-2xl font-bold text-orange-500">CAS</div>
           <div class="text-sm">
             <div class="font-semibold">Cihampelas Auto Service</div>
             <div class="text-xs text-gray-400">Professional Car Care</div>
           </div>
-        </div>
+        </router-link>
         
         <!-- Navigation Links -->
         <div class="hidden md:flex space-x-8">
@@ -18,14 +18,35 @@
             class="hover:text-orange-500 transition-colors duration-300"
             active-class="text-orange-500 font-semibold"
           >
-            Home
+            Beranda
+          </router-link>
+          <router-link 
+            to="/services" 
+            class="hover:text-orange-500 transition-colors duration-300"
+            active-class="text-orange-500 font-semibold"
+          >
+            Layanan
+          </router-link>
+          <router-link 
+            to="/about" 
+            class="hover:text-orange-500 transition-colors duration-300"
+            active-class="text-orange-500 font-semibold"
+          >
+            Tentang Kami
           </router-link>
           <router-link 
             to="/contact" 
             class="hover:text-orange-500 transition-colors duration-300"
             active-class="text-orange-500 font-semibold"
           >
-            Contact
+            Hubungi Kami
+          </router-link>
+          <router-link 
+            to="/booking" 
+            class="hover:text-orange-500 transition-colors duration-300"
+            active-class="text-orange-500 font-semibold"
+          >
+            Booking
           </router-link>
         </div>
         
@@ -47,14 +68,35 @@
           class="block py-2 hover:text-orange-500"
           @click="mobileMenuOpen = false"
         >
-          Home
+          Beranda
+        </router-link>
+        <router-link 
+          to="/services" 
+          class="block py-2 hover:text-orange-500"
+          @click="mobileMenuOpen = false"
+        >
+          Layanan
+        </router-link>
+        <router-link 
+          to="/about" 
+          class="block py-2 hover:text-orange-500"
+          @click="mobileMenuOpen = false"
+        >
+          Tentang Kami
         </router-link>
         <router-link 
           to="/contact" 
           class="block py-2 hover:text-orange-500"
           @click="mobileMenuOpen = false"
         >
-          Contact
+          Hubungi Kami
+        </router-link>
+        <router-link 
+          to="/booking" 
+          class="block py-2 hover:text-orange-500"
+          @click="mobileMenuOpen = false"
+        >
+          Booking
         </router-link>
       </div>
     </div>

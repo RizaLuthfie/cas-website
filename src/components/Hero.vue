@@ -27,10 +27,16 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#services" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+          <router-link 
+            to="/services" 
+            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+          >
             Layanan Kami
-          </a>
-          <router-link to="/contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+          </router-link>
+          <router-link 
+            to="/contact" 
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+          >
             Hubungi Kami
           </router-link>
         </div>
