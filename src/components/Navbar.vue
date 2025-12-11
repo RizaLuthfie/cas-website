@@ -48,7 +48,15 @@
           >
             Booking
           </router-link>
+          <router-link 
+            to="/aboutme" 
+            class="hover:text-orange-500 transition-colors duration-300"
+            active-class="text-orange-500 font-semibold"
+          >
+            About Me
+          </router-link>
         </div>
+
         
         <!-- Mobile Menu Button -->
         <button 
@@ -97,6 +105,13 @@
           @click="mobileMenuOpen = false"
         >
           Booking
+        </router-link>
+        <router-link 
+          to="/aboutme" 
+          class="block py-2 hover:text-orange-500"
+          @click="mobileMenuOpen = false"
+        >
+          About Me
         </router-link>
       </div>
     </div>
