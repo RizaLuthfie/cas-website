@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-gray-900 text-white shadow-lg">
-    <div class="container mx-auto px-4">
+    <div class="px-6 md:px-8 lg:px-12">
       <div class="flex justify-between items-center py-4">
         <!-- Logo & Brand -->
         <router-link to="/" class="flex items-center space-x-3">
@@ -47,13 +47,6 @@
             active-class="text-orange-500 font-semibold"
           >
             Booking
-          </router-link>
-          <router-link 
-            to="/aboutme" 
-            class="hover:text-orange-500 transition-colors duration-300"
-            active-class="text-orange-500 font-semibold"
-          >
-            About Me
           </router-link>
         </div>
 
@@ -105,13 +98,6 @@
           @click="mobileMenuOpen = false"
         >
           Booking
-        </router-link>
-        <router-link 
-          to="/aboutme" 
-          class="block py-2 hover:text-orange-500"
-          @click="mobileMenuOpen = false"
-        >
-          About Me
         </router-link>
       </div>
     </div>
